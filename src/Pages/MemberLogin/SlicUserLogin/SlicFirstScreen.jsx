@@ -157,8 +157,9 @@ const SlicFirstScreen = () => {
 
   return (
     <div>
-      <div className="px-3 py-3 bg-secondary shadow font-semibold font-sans rounded-sm text-gray-100 lg:px-5">
-        SLIC - Saudi Leather Industries Company
+      <div className="px-3 py-3 flex justify-between items-center flex-wrap bg-secondary shadow font-semibold font-sans rounded-sm text-gray-100 lg:px-5">
+        <p>SLIC - Saudi Leather Industries Company</p>
+        <p>Supply Chain Portal</p>
       </div>
       <div className="flex justify-center items-center h-auto mt-6 mb-6">
         <div className="3xl:h-[725px] 2xl:h-[725px] lg:h-[725px] h-auto w-[95%] pb-3 bg-[#e7f4f3] flex flex-col justify-start items-start border-2 border-primary rounded-md shadow-xl">
@@ -213,7 +214,7 @@ const SlicFirstScreen = () => {
 
           {/* Last Cards */}
           <div className="grid 3xl:grid-cols-3 2xl:grid-cols-3 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 sm:gap-6 gap-4 sm:px-6 px-2 mt-6">
-            <div onClick={() => navigate('/user-login')} className="h-auto w-full flex justify-center items-center bg-white border-[2px] rounded-lg shadow-lg px-2 py-4 shadow-[#B4B2AE] cursor-pointer transition-transform transform hover:scale-90">
+            <div onClick={() => window.open('http://gs1ksa.org:3085', '_blank')} className="h-auto w-full flex justify-center items-center bg-white border-[2px] rounded-lg shadow-lg px-2 py-4 shadow-[#B4B2AE] cursor-pointer transition-transform transform hover:scale-90">
               <div className="h-auto w-[35%]">
                 <img
                   src={gtinmanagement}
@@ -250,7 +251,7 @@ const SlicFirstScreen = () => {
               </div>
             </div>
 
-            <div onClick={() => window.open('/pos', '_blank')} className="h-auto w-full flex justify-center items-center bg-white border-[2px] rounded-lg shadow-lg px-2 py-4 shadow-[#B4B2AE] cursor-pointer transition-transform transform hover:scale-90">
+            <div onClick={() => window.open('http://gs1ksa.org:3087', '_blank')} className="h-auto w-full flex justify-center items-center bg-white border-[2px] rounded-lg shadow-lg px-2 py-4 shadow-[#B4B2AE] cursor-pointer transition-transform transform hover:scale-90">
             {/* <div onClick={() => navigate('/pos')} className="h-auto w-full flex justify-center items-center bg-white border-[2px] rounded-lg shadow-lg px-2 py-4 shadow-[#B4B2AE] cursor-pointer transition-transform transform hover:scale-90"> */}
               <div className="h-auto w-[35%]">
                 <img
